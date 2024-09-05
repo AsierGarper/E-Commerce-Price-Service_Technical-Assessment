@@ -1,8 +1,29 @@
+## Description
+
 E-Commerce Price Service - Technical Assessment
 
 Capitole's Technical Assessment for a Backend developer position with Java and Spring Boot.
 
-Instructions:
+## Required
+
+- JDK 17 or higher
+- Maven 3.6.0 or higher
+
+## How to use this API
+
+Once the app is deployed, to query the price of a product on a specific date, make a GET request to /price with the parameters productId, brandId and applicationDate.
+
+You can run ECommercePriceServiceApplicationTests and check it test. 
+
+In a web browser you can try a query too, for example:
+- http://localhost:8080/price?productId=35455&brandId=1&applicationDate=2020-06-14T10:00:00
+
+Access to the H2 database:
+username: capitole
+password: 1234
+- http://localhost:8080/h2-console/login.do?jsessionid=b77e1dbd6a79b90e7a3e1ef2b8994438
+
+## Technical Assessment Instructions:
 
 In the company's e-commerce database we have the PRICES table that reflects the final price (pvp) and the rate that applies to a product of a chain between certain dates. Below is an example of the table with the relevant fields:
 
@@ -46,11 +67,33 @@ Correct test results.
 
 
 //////////////////////////SPANISH VERSION/////////////////////////////
+## Descripcion
+
 E-Commerce Price Service - Evaluación Técnica
 
 Evaluación Técnica de Capitole para un puesto de desarrollador Backend con Java y Spring Boot.
 
-Instrucciones:
+## Requisitos
+
+- JDK 17 o superior
+- Maven 3.6.0 o superior
+
+## Cómo utilizar esta API
+
+Una vez desplegada la aplicación, para consultar el precio de un producto en una fecha concreta, realiza una petición GET a /price con los parámetros productId, brandId y applicationDate.
+
+Puedes ejecutar ECommercePriceServiceApplicationTests y comprobar que funcionan los test.
+
+En un navegador web también puede probar una consulta, por ejemplo:
+- http://localhost:8080/price?productId=35455&brandId=1&applicationDate=2020-06-14T10:00:00
+
+Acceso a la base de datos H2:
+username: capitole
+password: 1234
+- http://localhost:8080/h2-console/login.do?jsessionid=b77e1dbd6a79b90e7a3e1ef2b8994438
+
+## Instrucciones:
+
 En la base de datos de comercio electrónico de la compañía disponemos de la tabla  PRICES que refleja el precio final (pvp) y la tarifa que aplica a un producto de una cadena  entre unas fechas determinadas. A continuación se muestra un ejemplo de la tabla con  los campos relevantes:
 
 PRICES
